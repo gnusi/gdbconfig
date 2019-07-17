@@ -28,5 +28,5 @@ def gdb_has_xmethods():
         return False
 
 if gdb_has_xmethods():
-    from xmethods import register_libstdcxx_xmethods
+    from .xmethods import register_libstdcxx_xmethods
     register_libstdcxx_xmethods(gdb.current_objfile())
